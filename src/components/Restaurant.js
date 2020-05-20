@@ -41,13 +41,16 @@ class Restaurant extends Component {
       <div className='container'>
         <div className='e1'>{error}</div>
         <div className='c1'>
-          <input
-            type='text'
-            name='city'
-            value={city}
-            onChange={this.handleChange}
-            placeholder='City'
-          />
+          <label>
+            City
+            <input
+              type='text'
+              name='city'
+              value={city}
+              onChange={this.handleChange}
+              placeholder='Enter a City'
+            />
+          </label>
           <button
             onClick={this.getRestaurant}
             className={city ? "btn" : "btn disabled"}
@@ -56,14 +59,16 @@ class Restaurant extends Component {
           </button>
         </div>
         <div className='c2' hidden={this.props.restaurantsList.length === 0}>
-          Refine:
-          <input
-            type='text'
-            name='search'
-            value={search}
-            onChange={this.handleChange}
-            placeholder='Name, Street Or Area'
-          />
+          <label>
+            Refine
+            <input
+              type='text'
+              name='search'
+              value={search}
+              onChange={this.handleChange}
+              placeholder='Name, Street Or Area'
+            />
+          </label>
           <select
             className='select-filter'
             name='filterByPrice'
