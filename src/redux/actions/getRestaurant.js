@@ -4,7 +4,7 @@ import actionType from "./actionType";
 export const getRestaurants = (city) => {
   return (dispatch) => {
     axios
-      .get(`http://opentable.herokuapp.com/api/restaurants?city=${city}`)
+      .get(`https://opentable.herokuapp.com/api/restaurants?city=${city}`)
       .then((response) => {
         dispatch({
           type: actionType.GET_RESTAURANT,
