@@ -1,0 +1,27 @@
+.view-restaurant-comp {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  text-align: center;
+  .restaurant-cards {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: gainsboro;
+    }
+  }
+  .no-res-found {
+    color: red;
+    font-size: 20px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    display: block;
+    .restaurant-cards {
+      width: 100%;
+    }
+  }
+}
