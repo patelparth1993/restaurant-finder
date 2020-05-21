@@ -9,7 +9,7 @@ export const ViewRestaurant = (props) => {
     priceFilter = true;
   }
   return (
-    <div className='view-restaurant-comp'>
+    <div data-testid='view-restaurant' className='view-restaurant-comp'>
       {props.resList.map((eachRes) => {
         let viewRes = false;
         viewRes =
@@ -43,4 +43,9 @@ export const ViewRestaurant = (props) => {
       )}
     </div>
   );
+};
+ViewRestaurant.defaultProps = {
+  resList: [],
+  search: "",
+  filterByPrice: 0,
 };

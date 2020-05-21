@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <div
+      class="e1"
+    />
+    <div
+      class="c1"
+    >
+      <label>
+        City
+        <input
+          name="city"
+          placeholder="Enter a City"
+          type="text"
+          value=""
+        />
+      </label>
+      <button
+        class="btn disabled"
+        data-testid="get_restaurant_btn"
+      >
+        Get Restaurant
+      </button>
+    </div>
+    <div
+      class="c2"
+      hidden=""
+    >
+      <label>
+        Refine
+        <input
+          name="search"
+          placeholder="Name, Street Or Area"
+          type="text"
+          value=""
+        />
+      </label>
+      <select
+        class="select-filter"
+        name="filterByPrice"
+      >
+        <option
+          disabled=""
+          hidden=""
+          value="0"
+        >
+          By Price
+        </option>
+        <option
+          value="1"
+        >
+          1
+        </option>
+        <option
+          value="2"
+        >
+          2
+        </option>
+        <option
+          value="3"
+        >
+          3
+        </option>
+        <option
+          value="4"
+        >
+          4
+        </option>
+        <option
+          value="0"
+        >
+          All
+        </option>
+      </select>
+    </div>
+    <div
+      class="view-restaurant-comp"
+      data-testid="view-restaurant"
+    />
+  </div>
+</DocumentFragment>
+`;

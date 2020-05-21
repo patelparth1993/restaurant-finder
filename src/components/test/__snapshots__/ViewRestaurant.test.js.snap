@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="view-restaurant-comp"
+    data-testid="view-restaurant"
+  >
+    <div
+      class="restaurant-cards"
+    >
+      <strong>
+        Name: 
+      </strong>
+      Scaramouche Restaurant
+      <br />
+      <strong>
+        Address: 
+      </strong>
+      1 Benvenuto Place
+      <br />
+      <strong>
+        Area: 
+      </strong>
+      Toronto / SW Ontario
+      <br />
+      <strong>
+        Price: 
+      </strong>
+      4
+      <br />
+    </div>
+    <div
+      class="restaurant-cards"
+    >
+      <strong>
+        Name: 
+      </strong>
+      The Sultan's Tent
+      <br />
+      <strong>
+        Address: 
+      </strong>
+      49 Front St E
+      <br />
+      <strong>
+        Area: 
+      </strong>
+      Toronto / SW Ontario
+      <br />
+      <strong>
+        Price: 
+      </strong>
+      2
+      <br />
+    </div>
+  </div>
+</DocumentFragment>
+`;

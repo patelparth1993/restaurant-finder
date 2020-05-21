@@ -52,6 +52,7 @@ class Restaurant extends Component {
             />
           </label>
           <button
+            data-testid='get_restaurant_btn'
             onClick={this.getRestaurant}
             className={city ? "btn" : "btn disabled"}
           >
