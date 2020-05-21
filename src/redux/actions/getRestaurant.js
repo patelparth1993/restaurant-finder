@@ -1,5 +1,7 @@
 import axios from "axios";
 import actionType from "./actionType";
+var ES6Promise = require("es6-promise");
+ES6Promise.polyfill();
 
 const getRestFunction = async (city) => {
   const result = await axios.get(
