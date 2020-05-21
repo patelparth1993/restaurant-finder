@@ -61,4 +61,20 @@ describe("Restaurant component renders", () => {
       "No Restaurants Found"
     );
   });
+
+  it("Restaurants list as per search and price", () => {
+    const { getByTestId } = render(
+      <ViewRestaurant
+        resList={fakeResList}
+        search={"Toronto"}
+        filterByPrice={2}
+      />
+    );
+    const restaurantChildArray = Array.from(
+      getByTestId("view-restaurant").children
+    );
+
+    expect(/.The Sultan's Tent.*$/.test(restaurantChildArray[0].textContent))
+      .toBeTruthy;
+  });
 });
